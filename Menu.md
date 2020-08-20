@@ -3,7 +3,7 @@
 ## Home
 1. Summary
 2. Menu
-    1. Attendance
+    1. Profile
     2. Route
     3. 3rd Party
     4. Find
