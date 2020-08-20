@@ -3,7 +3,7 @@
 ## Home
 1. Summary
 2. Menu
-    1. [Attendance] (https://github.com/diohlicious/collection-management-app/blob/master/Attendance.md)
+    1. [Attendance](https://github.com/diohlicious/collection-management-app/blob/master/Attendance.md)
     2. Route
     3. 3rd Party
     4. Add
