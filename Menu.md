@@ -1,5 +1,7 @@
 # collection-management-app (CMA)
 
+## [Table Of Contents](https://github.com/diohlicious/collection-management-app/blob/master/Readme.md)
+
 ## Home
 1. Summary
 2. Menu
@@ -17,4 +19,3 @@
     2. [Task](https://github.com/diohlicious/collection-management-app/blob/master/Task.md)
     3. [Inbox](https://github.com/diohlicious/collection-management-app/blob/master/Inbox.md)
     4. [Profile](https://github.com/diohlicious/collection-management-app/blob/master/Profile.md)
-## [Table Of Contents](https://github.com/diohlicious/collection-management-app/blob/master/Readme.md)
