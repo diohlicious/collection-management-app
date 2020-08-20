@@ -3,12 +3,17 @@
 ## Home
 1. Summary
 2. Menu
-    1. Profile
+    1. Attendance
     2. Route
     3. 3rd Party
-    4. Find
-    5. Add
-    6. Appointment
-    7. Recovery
-    8. History
+    4. Add
+    5. Appointment
+    6. Recovery
+    7. History
+    8. Find
 3. Highlights
+4. Bottom Tab
+    1. Home
+    2. Task
+    3. Inbox
+    4. Profile
