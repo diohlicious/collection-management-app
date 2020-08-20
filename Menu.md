@@ -11,7 +11,7 @@
     4. [Add](https://github.com/diohlicious/collection-management-app/blob/master/Add.md)
     5. [Appointment](https://github.com/diohlicious/collection-management-app/blob/master/Appointment.md)
     6. [Recovery](https://github.com/diohlicious/collection-management-app/blob/master/Recovery.md)
-    7. [History](https://github.com/diohlicious/collection-management-app/blob/master/History.md)
+    7. [Archieve](https://github.com/diohlicious/collection-management-app/blob/master/Archieve.md)
     8. [Find](https://github.com/diohlicious/collection-management-app/blob/master/Find.md)
 3. Highlights
 4. Bottom Tab
