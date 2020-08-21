@@ -1,5 +1,5 @@
-## [Table Of Contents](Readme.md)
-## [Home](Menu.md)
+## [Table Of Contents](https://github.com/diohlicious/collection-management-app/edit/master/Doc/Table-Of-Contents.md)
+## [Home](https://github.com/diohlicious/collection-management-app/edit/master/Doc/Menu.md)
 ## [Route](Route.md)
 ### [Account Detail](Account-Detail.md)
 1. Account Detail Info
