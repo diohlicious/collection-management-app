@@ -1,4 +1,4 @@
-## [Table Of Contents](Readme.md)
+## [Table Of Contents](https://github.com/diohlicious/collection-management-app/edit/master/Doc/Table-Of-Contents.md)
 ## [Home](Menu.md)
 ## [Route](Route.md)
 ### [Account Detail](Account-Detail.md)
