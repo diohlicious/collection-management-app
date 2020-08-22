@@ -14,10 +14,12 @@ ___
 |Server Document
 |--|
 ```yaml
-[{
-"category": "MobilePhone",
-"information": "089608783929",
-"priority": "1"
-}]
+[
+    {
+        "category": "MobilePhone",
+        "information": "089608783929",
+        "priority": "1"
+    }
+]
 ```
 
