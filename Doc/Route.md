@@ -1,7 +1,7 @@
 ## [Table Of Contents](https://github.com/diohlicious/collection-management-app/blob/master/Readme.md)
 ## [Home](Menu.md)
 ## [Route](Route.md)
-Menu that contain map and today to-do-list. From this menu user can proceed agreement to Account Detail
+Menu that contain today to-do-list and its location in a map. From this menu user can proceed agreement to Account Detail
 
 1. [Account Detail](Account-Detail.md)
 ___
