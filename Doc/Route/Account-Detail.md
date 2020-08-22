@@ -15,4 +15,4 @@
 ___
 |Design
 |--
-![alt text](https://github.com/diohlicious/collection-management-app/blob/master/Doc/Images/Screenshot_20200822_132604.png "Route")
+![alt text](https://github.com/diohlicious/collection-management-app/blob/master/Doc/Images/Screenshot_20200822_132604.png "Recovery Option")
