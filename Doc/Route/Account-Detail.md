@@ -1,6 +1,6 @@
-## [Table Of Contents](https://github.com/diohlicious/collection-management-app/edit/master/Doc/Table-Of-Contents.md)
-## [Home](https://github.com/diohlicious/collection-management-app/edit/master/Doc/Menu.md)
-## [Route](Route.md)
+## [Table Of Contents](https://github.com/diohlicious/collection-management-app/blob/master/Doc/Table-Of-Contents.md)
+## [Home](https://github.com/diohlicious/collection-management-app/blob/master/Doc/Menu.md)
+## [Route](https://github.com/diohlicious/collection-management-app/blob/master/Doc/Route.md)
 ### [Account Detail](Account-Detail.md)
 1. Account Detail Info
   - Personal Info
