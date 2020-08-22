@@ -7,7 +7,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.1. [Quick Medical Check-Up](Attendance/Med-Check.md)  
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.2. [Leave Report](Attendance/Leave-Report.md)  
     1.2. [Route](Route.md)  
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2.1. [Account Detail](Account-Detail.md)  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2.1. [Account Detail](Route/Account-Detail.md)  
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2.1.1 [Direction](Route/Direction.md)  
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2.1.2 [Report](Route/Report.md)  
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2.1.3 [Info Update](Route/Info-Upd.md)  
