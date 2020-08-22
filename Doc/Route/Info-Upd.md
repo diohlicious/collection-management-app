@@ -1,6 +1,6 @@
-## [Table Of Contents](Readme.md)
-## [Home](Menu.md)
-## [Route](Route.md)
+## [Table Of Contents](https://github.com/diohlicious/collection-management-app/edit/master/Doc/Table-Of-Contents.md)
+## [Home](https://github.com/diohlicious/collection-management-app/edit/master/Doc/menu.md)
+## [Route](https://github.com/diohlicious/collection-management-app/edit/master/Doc/Route.md)
 ### [Account Detail](Account-Detail.md)
 #### [Info Update](Info-Upd.md)
 In this menu, user can update any information about customer that has changed recently.
