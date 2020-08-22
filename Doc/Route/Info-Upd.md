@@ -9,3 +9,7 @@ In this menu, user can update any information about customer that has changed re
 3. [Over Asset](Over-Asset.md)
 4. [Mitra Info](Mitra-Info.md)
 5. [Notes (Optional)](Info-Upd.md)
+___
+|Design
+|--
+![alt text](https://github.com/diohlicious/collection-management-app/blob/master/Doc/Images/Screenshot_20200822_135600.png "Info Update")
