@@ -3,7 +3,7 @@
 ## [Route](Route.md)
 Menu that contain today to-do-list and its location in a map. From this menu user can proceed agreement to Account Detail
 
-1. [Account Detail](Account-Detail.md)
+1. [Account Detail](Route/Account-Detail.md)
 ___
 |Design
 |--
