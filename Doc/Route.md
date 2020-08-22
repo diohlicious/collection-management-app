@@ -12,7 +12,7 @@ ___
 |Local Document
 |--
 ```yaml
-{
+[{
 "_daily": "2020-07-16",
 "_is3rdParty": "1",
 "accountGroup": "Green",
@@ -78,5 +78,5 @@ ___
 "tenor": 47,
 "visitTime": "05:00",
 "woDate": "2017-11-30 00:00:00"
-}
+}]
 ```
