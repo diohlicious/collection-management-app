@@ -46,9 +46,9 @@ ___
 "companyName": "BANK MAYORA ",
 "contactInformation": [
 {
-"Category": "MobilePhone",
-"Information": "089608783929",
-"Priority": "1"
+"category": "MobilePhone",
+"information": "089608783929",
+"priority": "1"
 }
 ],
 "customerFullName": "NUNIK CHAIRUNNISA ",
