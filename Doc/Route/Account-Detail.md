@@ -12,3 +12,7 @@
 3. [Report](Report.md)
 4. [Info Upd](Info-Upd.md)
 5. [Recovery Option](Recovery-Option.md)
+___
+|Design
+|--
+![alt text](https://github.com/diohlicious/collection-management-app/blob/master/Doc/Images/Screenshot_20200822_132604.png "Route")
