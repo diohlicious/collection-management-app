@@ -42,7 +42,7 @@ Open another checkbox
 ___
 |Design
 |--|
-|![alt text](https://github.com/diohlicious/collection-management-app/blob/master/Doc/Images/Screenshot_20200915_174034.png "Attendance")
+|![alt text](https://github.com/diohlicious/collection-management-app/blob/master/Doc/Images/Screenshot_20200915_174758.png "Attendance")
 |![alt text](https://github.com/diohlicious/collection-management-app/blob/master/Doc/Images/Screenshot_20200915_174449.png "Medical Check Up")
 
 
