@@ -1,4 +1,4 @@
-## [Table Of Contents](https://github.com/diohlicious/collection-management-app/blob/master/Readme.md)
+## [Table Of Contents](https://github.com/diohlicious/collection-management-app/blob/master/Table-Of-Contents.md)
 ## [Home](https://github.com/diohlicious/collection-management-app/blob/master/Menu.md)
 ## Attendance
 
@@ -39,3 +39,10 @@ Open another checkbox
 - Family emergency
 - Home emergency
 - Religious observances
+___
+|Design
+|--|
+|![alt text](https://github.com/diohlicious/collection-management-app/blob/master/Doc/Images/Screenshot_20200915_174034.png "Attendance")
+|![alt text](https://github.com/diohlicious/collection-management-app/blob/master/Doc/Images/Screenshot_20200915_174449.png "Medical Check Up")
+
+
