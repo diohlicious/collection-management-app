@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 tools:context=".fav.partner.PartnerAddActivity">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg">
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mitra Type:"
+                            android:textSize="12sp" />
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/edit_text_style">
+
+                        <Spinner
+                                android:id="@+id/tipeMitra"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:spinnerMode="dropdown" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mitra Name:"
+                            android:textSize="12sp" />
+
+                    <EditText
+                            android:id="@+id/mitraNameInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:maxLength="200"
+                            android:padding="5dp"
+                            android:textSize="14sp"
+                            android:textColor="@color/grey_700"
+                            android:background="@drawable/edit_text_style"
+                            android:ellipsize="start"
+                            android:inputType="text"
+                            android:tag="mitraNameInput" />
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ID No./NIB:"
+                            android:textSize="12sp" />
+
+                    <EditText
+                            android:id="@+id/mitraIdInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/grey_700"
+                            android:textSize="14sp"
+                            android:background="@drawable/edit_text_style"
+                            android:ellipsize="start"
+                            android:inputType="text"
+                            android:maxLength="200"
+                            android:tag="mitraIdInput" />
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Birth Place/Domisili:"
+                                android:textSize="12sp" />
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Birth Date:"
+                                android:layout_marginStart="20dp"
+                                android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                        <EditText
+                                android:id="@+id/pob"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="8dp"
+                                android:padding="5dp"
+                                android:textColor="@color/grey_700"
+                                android:textSize="14sp"
+                                android:maxLength="50"
+                                android:background="@drawable/edit_text_style"
+                                android:ellipsize="start"
+                                android:inputType="text"
+                                android:tag="pob" />
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_weight="1">
+
+                            <EditText
+                                    android:id="@+id/dobMitra"
+                                    android:enabled="false"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_weight="1"
+                                    android:layout_marginBottom="8dp"
+                                    android:padding="5dp"
+                                    android:textColor="@color/grey_700"
+                                    android:textSize="14sp"
+                                    android:background="@drawable/edit_text_style"
+                                    android:ellipsize="start"
+                                    android:ems="10"
+                                    android:inputType="date"
+                                    android:tag="dobMitra" />
+
+                            <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3">
+
+                                <ImageView
+                                        android:id="@+id/calendarMitra"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="left"
+                                        android:layout_marginStart="10dp"
+                                        app:srcCompat="@drawable/ic_calender" />
+
+                            </FrameLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Education:"
+                            android:textSize="12sp" />
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/edit_text_style"
+                            android:orientation="horizontal">
+
+                        <Spinner
+                                android:id="@+id/eduMitra"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:spinnerMode="dropdown"
+                                android:tag="eduMitra" />
+
+                    </LinearLayout>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Collection Handling Approach:"
+                            android:textSize="12sp" />
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/edit_text_style"
+                            android:orientation="horizontal">
+
+                        <Spinner
+                                android:id="@+id/handlingMitra"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:spinnerMode="dropdown"
+                                android:tag="handlingMitra" />
+
+                    </LinearLayout>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Residence Address:"
+                            android:textSize="12sp" />
+
+                    <EditText
+                            android:id="@+id/mitraAddrInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:layout_marginBottom="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/grey_700"
+                            android:textSize="14sp"
+                            android:background="@drawable/edit_text_style"
+                            android:ellipsize="start"
+                            android:inputType="text|textMultiLine"
+                            android:gravity="top"
+                            android:maxLength="500"
+                            android:tag="mitraAddr" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:text="Legal Address:"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                android:textSize="12sp" />
+                        <TextView
+                                android:id="@+id/copy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_marginEnd="10dp"
+                                android:text="Copy"
+                                android:textColor="@color/blue_600"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:textSize="12sp" />
+
+                        <!--<Button
+                            android:id="@+id/copy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:text="Copy"
+                            android:textColor="@color/grey_700"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:textSize="12sp" />-->
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <EditText
+                            android:id="@+id/mitraLAddrInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:layout_marginBottom="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/grey_700"
+                            android:textSize="14sp"
+                            android:background="@drawable/edit_text_style"
+                            android:ellipsize="start"
+                            android:inputType="text|textMultiLine"
+                            android:gravity="top"
+                            android:maxLength="500"
+                            android:tag="mitraAddrLegal" />
+
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Specialist:"
+                            android:textSize="12sp" />
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/edit_text_style"
+                            android:orientation="horizontal">
+
+                        <Spinner
+                                android:id="@+id/specMitra"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:spinnerMode="dropdown"
+                                android:tag="specMitra" />
+
+                    </LinearLayout>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Notes:"
+                            android:textSize="12sp" />
+
+                    <EditText
+                            android:id="@+id/mitraNotesInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="160dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/edit_text_style"
+                            android:textColor="@color/grey_700"
+                            android:padding="5dp"
+                            android:textSize="14sp"
+                            android:ellipsize="start"
+                            android:inputType="text|textMultiLine"
+                            android:gravity="top"
+                            android:maxLength="600"
+                            android:tag="mitraNotes" />
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="Photo"
+                                android:textSize="12sp" />
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="ID"
+                                android:textSize="12sp" />
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="NPWP"
+                                android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                        <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:textSize="12sp">
+
+                            <ImageView
+                                    android:id="@+id/mitraPhotoImg"
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:tag="mitraPhotoImg"
+                                    app:srcCompat="@drawable/data_photo" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:textSize="12sp">
+
+                            <ImageView
+                                    android:id="@+id/mitraKtpImg"
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:tag="mitraKtpImg"
+                                    app:srcCompat="@drawable/data_ktp" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:textSize="12sp">
+
+                            <ImageView
+                                    android:id="@+id/mitraNpwpImg"
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:tag="mitraNpwpImg"
+                                    app:srcCompat="@drawable/data_npwp" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="Jaminan Mitra"
+                                android:textSize="12sp" />
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="SPPI"
+                                android:textSize="12sp" />
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="Buku Tabungan"
+                                android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                        <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:textSize="12sp">
+
+                            <ImageView
+                                    android:id="@+id/mitraJaminanImg"
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:tag="mitraJaminanImg"
+                                    app:srcCompat="@drawable/data_jaminan" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:textSize="12sp">
+
+                            <ImageView
+                                    android:id="@+id/mitraSppiImg"
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:tag="mitraSppiImg"
+                                    app:srcCompat="@drawable/data_sppi" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:textSize="12sp">
+
+                            <ImageView
+                                    android:id="@+id/mitraBukuImg"
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:tag="mitraBukuImg"
+                                    app:srcCompat="@drawable/data_tabungan" />
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                    <Button
+                            android:id="@+id/cancelColPoin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:layout_marginEnd="10dp"
+                            style="@style/AppTheme.NegativeRoundedCornerMaterialButton"
+                            android:text="Cancel"
+                            android:textColor="@color/red_600"/>
+
+                    <Button
+                            android:id="@+id/saveColPoin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:layout_marginStart="10dp"
+                            style="@style/AppTheme.PositiveRoundedCornerMaterialButton"
+                            android:text="Save"
+                            android:textColor="@android:color/white" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

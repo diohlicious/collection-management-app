@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RadioButton
+        android:id="@+id/radioPriority"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:scaleX="0.5"
+        android:scaleY="0.5" />
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="start"
+        android:text="Jl. Sudamanik No.3 Parung Panjang Bogor" />
+
+    <TextView
+        android:id="@+id/txtType"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:text="Residence" />
+
+</TableRow>
+
+
+

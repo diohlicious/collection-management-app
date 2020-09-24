@@ -1,0 +1,47 @@
+{"data": [
+  {
+    "Address": "GRAND DUTA D3 NO29 , GEBANG RAYA, PERIUK, TANGERANG, 15132",
+    "Alamat": "GRAND DUTA D3 NO29 ",
+    "City": "TANGERANG",
+    "Kecamatan": "PERIUK",
+    "Kelurahan": "GEBANG RAYA",
+    "LatLong": "-6.1740743,106.5906836",
+    "Priority": "0",
+    "Type": "Legal",
+    "ZipCode": "15132"
+  },
+  {
+    "Address": "GRAND DUTA D3 NO29 , GEBANG RAYA, PERIUK, TANGERANG, 15132",
+    "Alamat": "GRAND DUTA D3 NO29 ",
+    "City": "TANGERANG",
+    "Kecamatan": "PERIUK",
+    "Kelurahan": "GEBANG RAYA",
+    "LatLong": "-6.1740743,106.5906836",
+    "Priority": "1",
+    "Type": "Residence",
+    "ZipCode": "15132"
+  },
+  {
+    "Address": "JL RAYA MERDEKA  CIMONE",
+    "Alamat": "",
+    "City": "",
+    "Kecamatan": "",
+    "Kelurahan": "",
+    "LatLong": "-6.1857355,106.6142342",
+    "Priority": "0",
+    "Type": "Company",
+    "ZipCode": ""
+  },
+  {
+    "Address": null,
+    "Alamat": "Jl.sunburst bsd",
+    "City": "Tangerang Selatan",
+    "Kecamatan": "bsd",
+    "Kelurahan": "bsd",
+    "LatLong": null,
+    "Priority": "0",
+    "Type": "Residence",
+    "ZipCode": "151514"
+  }
+]
+}

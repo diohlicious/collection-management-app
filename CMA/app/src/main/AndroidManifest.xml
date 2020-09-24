@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.studioh.cma">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+
+        <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="AIzaSyDh2K6DbBMzBeERoWx87GPWWi69GCqHRjQ"/>
+        <activity
+                android:name=".main.MainActivity"
+                android:label="@string/app_name"
+                android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!-- ________________________________________________________________main root-->
+        <activity
+                android:name=".main.InboxActivity"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:hardwareAccelerated="true"/>
+        <activity
+                android:name=".main.TaskActivity"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:hardwareAccelerated="true"/>
+        <activity
+                android:name=".main.ProfileActivity"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:hardwareAccelerated="true"/>
+
+        <!-- ________________________________________________________________Fav root-->
+        <activity
+                android:name=".fav.AttendanceActivity"
+                android:theme="@style/AppTheme"/>
+        <activity
+                android:name=".fav.RouteActivity"
+                android:theme="@style/AppTheme"/>
+        <activity
+                android:name=".fav.partner.PartnerActivity"
+                android:theme="@style/AppTheme"/>
+        <activity
+                android:name=".fav.partner.PartnerAddActivity"
+                android:theme="@style/AppTheme"/>
+        <activity
+                android:name=".fav.AddActivity"
+                android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+                android:name=".fav.AppointmentActivity"
+                android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".fav.AppointmentAdd"
+            android:theme="@style/AppTheme"/>
+        <activity
+                android:name=".fav.RecoveryListActivity"
+                android:theme="@style/AppTheme"/>
+        <activity
+                android:name=".fav.ArchiveActivity"
+                android:theme="@style/AppTheme"/>
+        <activity
+                android:name=".fav.FindActivity"
+                android:theme="@style/AppTheme"/>
+        <!-- ________________________________________________________________act root-->
+        <activity
+                android:name=".act.BHCActivity"
+                android:theme="@style/AppTheme"/>
+        <activity
+                android:name=".act.Detail"
+                android:theme="@style/AppTheme"/>
+        <!-- ________________________________________________________________recovery root-->
+        <activity
+                android:name=".recovery.RecoveryActivity"
+                android:theme="@style/AppTheme"/>
+        <activity
+                android:name=".recovery.Partial"
+                android:theme="@style/AppTheme"/>
+        <activity
+                android:name=".recovery.Repossess"
+                android:theme="@style/AppTheme"/>
+        <activity
+                android:name=".recovery.Waived"
+                android:theme="@style/AppTheme"/>
+        <activity
+                android:name=".recovery.Full"
+                android:theme="@style/AppTheme"/>
+        <!-- ________________________________________________________________infoupd root-->
+        <activity
+                android:name=".infoupd.InfoUpd"
+                android:theme="@style/AppTheme"/>
+        <activity
+                android:name=".infoupd.AddressesAdd"
+                android:theme="@style/AppTheme"/>
+        <activity
+                android:name=".infoupd.ContactsAdd"
+                android:theme="@style/AppTheme"/>
+        <activity
+                android:name=".infoupd.AssetAdd"
+                android:theme="@style/AppTheme"/>
+        <activity
+                android:name=".infoupd.MitraAdd"
+                android:theme="@style/AppTheme"/>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp"
+            app:cardBackgroundColor="@color/green_A500"
+            app:cardCornerRadius="9dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Achievement"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <include
+                    android:id="@+id/item"
+                    layout="@layout/item_achieve"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/item1"/>
+
+                <include
+                    android:id="@+id/item1"
+                    layout="@layout/item_achieve"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    app:layout_constraintStart_toEndOf="@id/item"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/item2"/>
+
+                <include
+                    android:id="@+id/item2"
+                    layout="@layout/item_achieve"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    app:layout_constraintStart_toEndOf="@id/item1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp">
+
+            <Button
+                android:id="@+id/attendance"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/mn_attendance"
+                android:drawableTop="@drawable/ic_attendance_smaller"
+                android:paddingTop="15dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:textColor="@color/blue_500"
+                android:textSize="12sp"
+                style="@style/AppTheme.MenuRoundedCornerMaterialButton"
+                app:layout_constraintEnd_toStartOf="@id/route"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <Button
+                android:id="@+id/route"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/mn_route"
+                android:drawableTop="@drawable/ic_route_smaller"
+                android:paddingTop="15dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:textColor="@color/blue_500"
+                android:textSize="12sp"
+                style="@style/AppTheme.MenuRoundedCornerMaterialButton"
+                app:layout_constraintEnd_toStartOf="@id/partner"
+                app:layout_constraintStart_toEndOf="@id/attendance"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <Button
+                android:id="@+id/partner"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/mn_partner"
+                android:drawableTop="@drawable/ic_partner_smaller"
+                android:paddingTop="15dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:textColor="@color/blue_500"
+                android:textSize="12sp"
+                style="@style/AppTheme.MenuRoundedCornerMaterialButton"
+                app:layout_constraintEnd_toStartOf="@id/add"
+                app:layout_constraintStart_toEndOf="@id/route"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/mn_add"
+                android:drawableTop="@drawable/ic_add_smaller"
+                android:paddingTop="15dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:textColor="@color/blue_500"
+                android:textSize="12sp"
+                style="@style/AppTheme.MenuRoundedCornerMaterialButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/partner"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <Button
+                android:id="@+id/appointment"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/mn_appointment"
+                android:drawableTop="@drawable/ic_appointment_smaller"
+                android:paddingTop="15dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:textColor="@color/blue_500"
+                android:textSize="12sp"
+                style="@style/AppTheme.MenuRoundedCornerMaterialButton"
+                app:layout_constraintEnd_toStartOf="@id/recovery"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/attendance"/>
+
+            <Button
+                android:id="@+id/recovery"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/mn_recovery"
+                android:drawableTop="@drawable/ic_recovery_smaller"
+                android:paddingTop="15dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:textColor="@color/blue_500"
+                android:textSize="12sp"
+                style="@style/AppTheme.MenuRoundedCornerMaterialButton"
+                app:layout_constraintEnd_toStartOf="@id/archieve"
+                app:layout_constraintStart_toEndOf="@id/appointment"
+                app:layout_constraintTop_toBottomOf="@id/route"/>
+
+            <Button
+                android:id="@+id/archieve"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/mn_archive"
+                android:drawableTop="@drawable/ic_archive_smaller"
+                android:paddingTop="15dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:textColor="@color/blue_500"
+                android:textSize="12sp"
+                style="@style/AppTheme.MenuRoundedCornerMaterialButton"
+                app:layout_constraintEnd_toStartOf="@id/find"
+                app:layout_constraintStart_toEndOf="@id/recovery"
+                app:layout_constraintTop_toBottomOf="@id/partner"/>
+
+
+            <Button
+                android:id="@+id/find"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="10dp"
+                style="@style/AppTheme.MenuRoundedCornerMaterialButton"
+                android:text="@string/mn_find"
+                android:drawableTop="@drawable/ic_find_smaller"
+                android:paddingTop="15dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:textColor="@color/blue_500"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/archieve"
+                app:layout_constraintTop_toBottomOf="@id/add"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

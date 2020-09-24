@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".recovery.Repossess">>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="7dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Handling By" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/edit_text_style"
+                        android:padding="5dp">
+
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Third Party Fee" />
+
+                    <EditText
+                        android:id="@+id/thrdPartyInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/edit_text_style"
+                        android:ems="10"
+                        android:inputType="phone"
+                        android:padding="5dp"
+                        android:textColor="@color/grey_700" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PIC" />
+
+                    <EditText
+                        android:id="@+id/editText4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/border"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:padding="5dp"
+                        android:textColor="@color/grey_700"
+                        android:visibility="gone" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ProgressBar
+                                android:id="@+id/pb_txt"
+                                style="?android:attr/progressBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|right"
+                                android:layout_marginRight="5dp"
+                                android:visibility="gone" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.studioh.srv.StudiohAutoComplete
+                            android:id="@+id/txtPIC"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/edit_text_style"
+                            android:inputType="textPersonName"
+                            android:maxLines="1"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/grey_700" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Note" />
+
+                    <EditText
+                        android:id="@+id/editText6"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/edit_text_style"
+                        android:ems="10"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:maxLength="600"
+                        android:padding="5dp"
+                        android:textColor="@color/grey_700" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Harga Jual" />
+
+                    <EditText
+                        android:id="@+id/hargaInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:maxLength="13"
+                        android:background="@drawable/edit_text_style"
+                        android:ems="10"
+                        android:inputType="phone"
+                        android:padding="5dp"
+                        android:textColor="@color/grey_700" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="29dp"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:text="RAL" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp">
+
+                                <ImageView
+                                    android:id="@+id/imgRal"
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:src="@drawable/repossess_ral" />
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="29dp"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:text="Surat Permohonan" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp">
+
+                                <ImageView
+                                    android:id="@+id/imgPermohonan"
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:src="@drawable/repossess_permohonan" />
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt0"
+                                android:layout_width="match_parent"
+                                android:layout_height="29dp"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:text="Add Image" />
+                            <EditText
+                                android:id="@+id/input0"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:maxLength="600"
+                                android:padding="5dp"
+                                android:textColor="@color/grey_700" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp">
+
+                                <ImageView
+                                    android:id="@+id/add0"
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:src="@drawable/add" />
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/layout1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt1"
+                                android:layout_width="match_parent"
+                                android:layout_height="29dp"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:text="Add Image" />
+                            <EditText
+                                android:id="@+id/input1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:hint="Photo Name"
+                                android:visibility="gone"
+                                android:ems="10"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:inputType="textMultiLine"
+                                android:maxLength="600"
+                                android:padding="5dp"
+                                android:textColor="@color/grey_700" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp">
+
+                                <ImageView
+                                    android:id="@+id/add1"
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:src="@drawable/add" />
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt2"
+                                android:layout_width="match_parent"
+                                android:layout_height="29dp"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:text="Add Image" />
+                            <EditText
+                                android:id="@+id/input2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Photo Name"
+                                android:visibility="gone"
+                                android:layout_marginBottom="8dp"
+                                android:ems="10"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:inputType="textMultiLine"
+                                android:maxLength="600"
+                                android:padding="5dp"
+                                android:textColor="@color/grey_700" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp">
+
+                                <ImageView
+                                    android:id="@+id/add2"
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:src="@drawable/add" />
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout3"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt3"
+                                android:layout_width="match_parent"
+                                android:layout_height="29dp"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:text="Add Image" />
+                            <EditText
+                                android:id="@+id/input3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Photo Name"
+                                android:visibility="gone"
+                                android:layout_marginBottom="8dp"
+                                android:ems="10"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:inputType="textMultiLine"
+                                android:maxLength="600"
+                                android:padding="5dp"
+                                android:textColor="@color/grey_700" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp">
+
+                                <ImageView
+                                    android:id="@+id/add3"
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:src="@drawable/add" />
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/layout4"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt4"
+                                android:layout_width="match_parent"
+                                android:layout_height="29dp"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:text="Add Image" />
+                            <EditText
+                                android:id="@+id/input4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:hint="Photo Name"
+                                android:visibility="gone"
+                                android:ems="10"
+                                android:textSize="12sp"
+                                android:gravity="center"
+                                android:inputType="textMultiLine"
+                                android:maxLength="600"
+                                android:padding="5dp"
+                                android:textColor="@color/grey_700" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp">
+
+                                <ImageView
+                                    android:id="@+id/add4"
+                                    android:layout_width="100dp"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:src="@drawable/add" />
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/cancelReposses"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="0.4"
+                        style="@style/AppTheme.NegativeRoundedCornerMaterialButton"
+                        android:text="Cancel"
+                        android:textColor="@color/red_600" />
+
+                    <Button
+                        android:id="@+id/saveReposses"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.4"
+                        style="@style/AppTheme.PositiveRoundedCornerMaterialButton"
+                        android:text="Save"
+                        android:textColor="@android:color/white" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+           <TextView
+                android:id="@+id/noSeq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:text="1"
+                android:textSize="16dp"
+                android:layout_gravity="center_horizontal|center_vertical"/>
+
+    <EditText
+        android:id="@+id/txtInstall"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:textSize="16dp"
+        android:maxLength="11"
+        android:inputType="number"
+        android:layout_marginBottom="5dp"
+        android:gravity="start"/>
+
+    <EditText
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:textSize="16dp"
+        android:enabled="false"
+        android:gravity="start"
+        android:hint="PTP Date" />
+
+    <ImageView
+        android:id="@+id/btnDate"
+        android:layout_width="49dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:src="@drawable/ic_calender"
+        android:text="1"
+        android:textSize="18dp" />
+        </TableRow>
+
+
+
