@@ -31,4 +31,4 @@ Listed file below are limited to cooperational agreement. Go to playstore to dow
 | File | Desc | Used
 |:-----|:-----|:-----
 | dson.java | diohlicious-json serialize and deserialize | most of class
-| manifest.xml | contain google api key| - |
+| AndroidManifest.xml | contain google api key| - |
