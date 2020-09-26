@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/main_toolbar"
+            layout="@layout/main_toolbar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="@color/green_100"
+                    app:cardElevation="3dp">
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgAvatar"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/avatar" />
+
+            </FrameLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+
+            <TextView
+                android:id="@+id/nik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/useridDemo" />
+        </FrameLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="19dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginEnd="110dp"
+                app:layout_constraintEnd_toStartOf="@+id/ktp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_person" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="@string/nama"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/ktp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/namaDemo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/green_50"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="19dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginEnd="110dp"
+                app:layout_constraintEnd_toStartOf="@+id/ktp"
+                app:layout_constraintTop_toBottomOf="@+id/name"
+                app:srcCompat="@drawable/ic_ktp" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/idNumber"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/ktp"
+                app:layout_constraintTop_toBottomOf="@+id/name"  />
+
+            <TextView
+                android:id="@+id/ktp"
+                android:layout_width="250dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/idNumberDemo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/green_50"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ktp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="19dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="110dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_notelp"
+                app:layout_constraintTop_toBottomOf="@+id/ktp"
+                app:layout_constraintEnd_toStartOf="@id/nophone"/>
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="right"
+                android:text="@string/phoneNo"
+                app:layout_constraintTop_toBottomOf="@+id/ktp"
+                app:layout_constraintEnd_toStartOf="@id/nophone"/>
+
+            <TextView
+                android:id="@+id/nophone"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="start"
+                android:text="0812 6902 100"
+                app:layout_constraintTop_toBottomOf="@+id/ktp"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/green_50"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nophone" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="19dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="110dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="1"
+                app:layout_constraintTop_toBottomOf="@+id/nophone"
+                app:layout_constraintEnd_toStartOf="@id/email"
+                app:srcCompat="@drawable/ic_email" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/email"
+                app:layout_constraintTop_toBottomOf="@+id/nophone"
+                app:layout_constraintEnd_toStartOf="@id/email"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="start"
+                android:text="@string/studioh_gmail_com"
+                app:layout_constraintTop_toBottomOf="@+id/nophone"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/green_50"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="19dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="110dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="1"
+                app:layout_constraintTop_toBottomOf="@+id/email"
+                app:layout_constraintEnd_toStartOf="@id/bod"
+                app:srcCompat="@drawable/ic_tanggallahir" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/tglLahir"
+                app:layout_constraintTop_toBottomOf="@+id/email"
+                app:layout_constraintEnd_toStartOf="@id/bod"/>
+
+            <TextView
+                android:id="@+id/bod"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="start"
+                android:text="@string/dateBirthDemo"
+                app:layout_constraintTop_toBottomOf="@+id/email"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/green_50"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bod" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="115dp"
+                android:layout_weight="1"
+                app:layout_constraintTop_toBottomOf="@+id/bod"
+                app:layout_constraintEnd_toStartOf="@+id/alamat"
+                app:srcCompat="@drawable/ic_alamat" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/alamat"
+                app:layout_constraintTop_toBottomOf="@+id/bod"
+                app:layout_constraintEnd_toStartOf="@id/alamat"/>
+
+            <TextView
+                android:id="@+id/alamat"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/alamatDemo"
+                app:layout_constraintTop_toBottomOf="@+id/bod"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white">
+
+        <include
+            android:id="@+id/main_dl"
+            layout="@layout/main_nav_drawer" />
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

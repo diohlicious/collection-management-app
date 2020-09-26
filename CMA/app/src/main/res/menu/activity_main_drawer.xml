@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/homeDL" />
+        <item
+            android:id="@+id/nav_task"
+            android:icon="@drawable/ic_task"
+            android:title="@string/taskDL" />
+        <item
+            android:id="@+id/nav_inbox"
+            android:icon="@drawable/ic_inbox"
+            android:title="@string/inboxDL" />
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard"
+            android:title="@string/dashboardDL" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_setting"
+            android:title="@string/settingDL" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_power"
+            android:title="@string/logoutDL" />
+
+    </group>
+</menu>

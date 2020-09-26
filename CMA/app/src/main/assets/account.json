@@ -1,0 +1,297 @@
+[
+  {
+    "Address": [
+      {
+        "Address": "RANCA BUNAR, PANCANEGARA, PABUARAN, SERANG, 42163",
+        "Alamat": "RANCA BUNAR",
+        "City": "SERANG",
+        "Kecamatan": "PABUARAN",
+        "Kelurahan": "PANCANEGARA",
+        "LatLong": "-6.199964, 106.093989",
+        "Priority": "1",
+        "Type": "Legal",
+        "ZipCode": "42163"
+      },
+      {
+        "Address": "PABATAN, PANCANEGARA, PABUARAN, SERANG, 42163",
+        "Alamat": "PABATAN",
+        "City": "SERANG",
+        "Kecamatan": "PABUARAN",
+        "Kelurahan": "PANCANEGARA",
+        "LatLong": "-6.191587, 106.093188",
+        "Priority": "0",
+        "Type": "Residence",
+        "ZipCode": "42163"
+      },
+      {
+        "Address": "RAYA LABUAN KM 02 KP JAHA MASJID, , , , ",
+        "Alamat": "RAYA LABUAN KM 02 KP JAHA MASJID",
+        "City": null,
+        "Kecamatan": null,
+        "Kelurahan": null,
+        "LatLong": "-6.390044, 105.838162",
+        "Priority": "0",
+        "Type": "Company",
+        "ZipCode": null
+      },
+      {
+        "Address": "jalan, , , , ",
+        "Alamat": "jalan",
+        "City": null,
+        "Kecamatan": null,
+        "Kelurahan": null,
+        "LatLong": null,
+        "Priority": "0",
+        "Type": "Residance",
+        "ZipCode": null
+      },
+      {
+        "Address": "oke, , , , ",
+        "Alamat": "oke",
+        "City": null,
+        "Kecamatan": null,
+        "Kelurahan": null,
+        "LatLong": null,
+        "Priority": "0",
+        "Type": "Legal",
+        "ZipCode": null
+      },
+      {
+        "Address": "pos, , , , ",
+        "Alamat": "pos",
+        "City": null,
+        "Kecamatan": null,
+        "Kelurahan": null,
+        "LatLong": null,
+        "Priority": "0",
+        "Type": "Company",
+        "ZipCode": null
+      }
+    ],
+    "AgreementNo": "5391400026",
+    "AssetDescription": "TOYOTA NEW AVANZA VVTI G 1.3 MT",
+    "AssetType": "MOTOR",
+    "BirthofDate": "1989-11-25 00:00:00",
+    "BirthPlace": "SERANG",
+    "CaseCategory": "B3 - Pindah Tangan Pihak Ke3/Overkredit",
+    "CollectorName": null,
+    "Colour": "HITAM METALIK",
+    "CompanyName": "PT BPR LAMBANG GANDA KANTOR CABANG LABUAN",
+    "ContactInformation": [
+      {
+        "Category": "MobilePhone",
+        "Information": "083898138100",
+        "Priority": "1"
+      },
+      {
+        "Category": "PhoneNo",
+        "Information": "085218203618",
+        "Priority": "0"
+      },
+      {
+        "Category": "CompanyPhoneNo",
+        "Information": "081717451373",
+        "Priority": "0"
+      },
+      {
+        "Category": "EmergencyContactPhoneNo",
+        "Information": "087808712775",
+        "Priority": "0"
+      },
+      {
+        "Category": "Spouse_MobilePhoneNo",
+        "Information": "082292883993",
+        "Priority": "0"
+      },
+      {
+        "Category": "Instagram",
+        "Information": "https://www.instagram.com/romizahmad/",
+        "Priority": "0"
+      },
+      {
+        "Category": "Email",
+        "Information": "andi.kurniawan@sitama.co.id",
+        "Priority": "0"
+      },
+      {
+        "Category": "Twitter",
+        "Information": "https://twitter.com/ahmaddhaniprast",
+        "Priority": "0"
+      },
+      {
+        "Category": "Facebook",
+        "Information": "https://id-id.facebook.com/cut.syifa.33827",
+        "Priority": "0"
+      },
+      {
+        "Category": "MobilePhone",
+        "Information": "0823658",
+        "Priority": "0"
+      },
+      {
+        "Category": "Spouse Contact",
+        "Information": "123456",
+        "Priority": "0"
+      }
+    ],
+    "CustomerFullName": "ASEP RIZAL PURNAMA",
+    "DaysOverDue": "223",
+    "EmergencyContactName": "ENJAT",
+    "Idno": "3604282511891093",
+    "LicensePlate": "B1367UFF",
+    "Notes": "berrtemu dengan adik pemagang unit ,info dari adik konsumen uang terpakai untuk biaya lahiran",
+    "NPLDate": "2018-06-30 00:00:00",
+    "OSInterestAmount": 0,
+    "OSLCAmount": 5766443,
+    "OSPrincipalAmount": 5498090,
+    "others": "other",
+    "Religion": "Islam",
+    "ResponseCode": "00",
+    "ResponseDescription": "Success",
+    "SerialNo1": "MHFM1BA3J8K122170",
+    "SerialNo2": "DD55511",
+    "Spouse_Name": null,
+    "WODate": "2018-06-30 00:00:00"
+  },
+  {
+    "_A": "1",
+    "_C": "1",
+    "_DAYLY": "2020-07-17",
+    "AccountGroup": "Green",
+    "AccruedInterest": 0,
+    "Address": [
+      {
+        "Address": "GRAND DUTA D3 NO29 , GEBANG RAYA, PERIUK, TANGERANG, 15132",
+        "Alamat": "GRAND DUTA D3 NO29 ",
+        "City": "TANGERANG",
+        "Kecamatan": "PERIUK",
+        "Kelurahan": "GEBANG RAYA",
+        "LatLong": "-6.1740743,106.5906836",
+        "Priority": "0",
+        "Type": "Legal",
+        "ZipCode": "15132"
+      },
+      {
+        "Address": "GRAND DUTA D3 NO29 , GEBANG RAYA, PERIUK, TANGERANG, 15132",
+        "Alamat": "GRAND DUTA D3 NO29 ",
+        "City": "TANGERANG",
+        "Kecamatan": "PERIUK",
+        "Kelurahan": "GEBANG RAYA",
+        "LatLong": "-6.1740743,106.5906836",
+        "Priority": "1",
+        "Type": "Residence",
+        "ZipCode": "15132"
+      },
+      {
+        "Address": "JL RAYA MERDEKA  CIMONE",
+        "Alamat": "",
+        "City": "",
+        "Kecamatan": "",
+        "Kelurahan": "",
+        "LatLong": "-6.1857355,106.6142342",
+        "Priority": "0",
+        "Type": "Company",
+        "ZipCode": ""
+      },
+      {
+        "Address": null,
+        "Alamat": "Jl.sunburst bsd",
+        "City": "Tangerang Selatan",
+        "Kecamatan": "bsd",
+        "Kelurahan": "bsd",
+        "LatLong": null,
+        "Priority": "0",
+        "Type": "Residence",
+        "ZipCode": "151514"
+      }
+    ],
+    "AgreementDate": "2016-03-23 00:00:00",
+    "AgreementNo": "5671600320",
+    "approve_rpk": "1",
+    "Area": "TANGERANG",
+    "AROthers": 0,
+    "AssetDescription": "DAIHATSU-ALL NEW XENIA-R SPORTY VVTI 1.3 AT",
+    "AssetType": "MOBIL",
+    "BirthofDate": "1984-06-10 00:00:00",
+    "BirthPlace": "TANGERANG",
+    "Branch": "SERPONG - TANGERANG SELATAN",
+    "CaseCategory": "B3 - Pindah Tangan Pihak Ke3/Overkredit",
+    "CollectorName": "Joko Anwar",
+    "Colour": "SILVER METALIK",
+    "CompanyName": "BANK MAYORA ",
+    "ContactInformation": [
+      {
+        "Category": "Email",
+        "Information": "nunik.chae93@hmail.com",
+        "Priority": "0"
+      },
+      {
+        "Category": "MobilePhone",
+        "Information": "089608783929",
+        "Priority": "1"
+      },
+      {
+        "Category": "Spouse_MobilePhoneNo",
+        "Information": "089682800012",
+        "Priority": "0"
+      },
+      {
+        "Category": "CompanyPhoneNo",
+        "Information": "08569874123",
+        "Priority": "0"
+      },
+      {
+        "Category": "EmergencyContactPhoneNo",
+        "Information": "085814533356",
+        "Priority": "0"
+      },
+      {
+        "Category": "MobilePhone",
+        "Information": "08569874123",
+        "Priority": "0"
+      },
+      {
+        "Category": "Facebook",
+        "Information": "nunik.93",
+        "Priority": "0"
+      },
+      {
+        "Category": "Twitter",
+        "Information": "nuniknunik",
+        "Priority": "0"
+      },
+      {
+        "Category": "Instagram",
+        "Information": "nunikmutez.93",
+        "Priority": "0"
+      }
+    ],
+    "CustomerFullName": "NUNIK CHAIRUNNISA ",
+    "DaysOverDue": "1143",
+    "EmergencyContactName": "ERWIN ",
+    "GoliveDate": "2016-03-26 00:00:00",
+    "Idno": "3671095006840002",
+    "installmentDue": 123794000,
+    "is_Daily": "2020-07-16",
+    "is_priority": "0",
+    "LicensePlate": "B1915ZFE",
+    "MarketPrice": 821020020,
+    "Notes": "KUNJUNGAN KETEMPAT PEMEGANG UNIT JB TGL 15/07/17",
+    "NPLDate": "2017-07-31 00:00:00",
+    "NTFAmount": 119619000,
+    "OSInterestAmount": 30451398,
+    "OSLCAmount": 376807090,
+    "OSPrincipalAmount": 96983602,
+    "PrepaymentPenalty": "0",
+    "Region": "Jabodetabek",
+    "Religion": "Islam",
+    "ResponseCode": "00",
+    "ResponseDescription": "Success",
+    "SerialNo1": "MHKVIBB2JCK003476",
+    "SerialNo2": "DL42922",
+    "Spouse_Name": "RIZKY PERMANA",
+    "Tenor": 47,
+    "visit_time": "05:00",
+    "WODate": "2017-11-30 00:00:00"
+  }
+]

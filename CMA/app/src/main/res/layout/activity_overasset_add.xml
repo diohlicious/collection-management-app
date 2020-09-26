@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".infoupd.InfoUpd">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Third Party (Buyer):"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/thrdPartyInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:maxLength="300"
+                    android:padding="5dp"
+                    android:textColor="@color/grey_700"
+                    android:background="@drawable/edit_text_style"
+                    android:ellipsize="start"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address:"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/addrInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/edit_text_style"
+                    android:ellipsize="start"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:maxLength="300"
+                    android:padding="5dp"
+                    android:textColor="@color/grey_700"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Rt:"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:text="Rw:"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/rtInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_style"
+                        android:ellipsize="start"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:maxLength="300"
+                        android:padding="5dp"
+                        android:textColor="@color/grey_700"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/rwInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_style"
+                        android:ellipsize="start"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:maxLength="300"
+                        android:padding="5dp"
+                        android:textColor="@color/grey_700"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kelurahan:"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/kelurahanInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/edit_text_style"
+                    android:ellipsize="start"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:maxLength="300"
+                    android:padding="5dp"
+                    android:textColor="@color/grey_700"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kecamatan:"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/kecamatanInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/edit_text_style"
+                    android:ellipsize="start"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:maxLength="300"
+                    android:padding="5dp"
+                    android:textColor="@color/grey_700"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kota:"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/kotaInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/edit_text_style"
+                    android:ellipsize="start"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:maxLength="300"
+                    android:padding="5dp"
+                    android:textColor="@color/grey_700"
+                    android:textSize="14sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kode Pos:"
+                    android:textSize="12sp" />
+                <EditText
+                    android:id="@+id/kodeposInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/edit_text_style"
+                    android:ellipsize="start"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:maxLength="300"
+                    android:padding="5dp"
+                    android:textColor="@color/grey_700"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Phone:"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/phoneInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:padding="5dp"
+                    android:maxLength="20"
+                    android:textColor="@color/grey_700"
+                    android:background="@drawable/edit_text_style"
+                    android:ellipsize="start"
+                    android:inputType="phone"
+                    android:tag="mitraIdInput" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No. Telepon:"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/phone2Input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:padding="5dp"
+                    android:maxLength="20"
+                    android:textColor="@color/grey_700"
+                    android:background="@drawable/edit_text_style"
+                    android:ellipsize="start"
+                    android:inputType="phone"
+                    android:tag="mitraIdInput" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email:"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/emailInput"
+                    android:tag="emailInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:padding="5dp"
+                    android:maxLength="60"
+                    android:textColor="@color/grey_700"
+                    android:background="@drawable/edit_text_style"
+                    android:ellipsize="start"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Profile:"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/edit_text_style"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/profileSelect"
+                        android:tag="profileSelect"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:spinnerMode="dropdown"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reason:"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/reasonInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:maxLength="500"
+                    android:textColor="@color/grey_700"
+                    android:background="@drawable/edit_text_style"
+                    android:ellipsize="start"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"
+                    android:tag="mitraNotes" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notes:"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/notesInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:padding="5dp"
+                    android:maxLength="600"
+                    android:textColor="@color/grey_700"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_text_style"
+                    android:ellipsize="start"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"
+                    android:tag="mitraNotes" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    >
+                    <Button
+                        android:id="@+id/cancelOvrAsset"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:layout_marginEnd="10dp"
+                        style="@style/AppTheme.NegativeRoundedCornerMaterialButton"
+                        android:text="Cancel"
+                        android:textColor="@color/red_600" />
+                    <Button
+                        android:id="@+id/saveInfoMit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:layout_marginStart="10dp"
+                        style="@style/AppTheme.PositiveRoundedCornerMaterialButton"
+                        android:text="Save"
+                        android:textColor="@android:color/white" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
