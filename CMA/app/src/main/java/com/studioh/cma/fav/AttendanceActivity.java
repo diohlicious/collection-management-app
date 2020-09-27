@@ -2,6 +2,8 @@ package com.studioh.cma.fav;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.app.DatePickerDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -13,19 +15,30 @@ import android.os.SystemClock;
 import android.provider.MediaStore;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SwitchCompat;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.Chronometer;
+import android.widget.CompoundButton;
+import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextClock;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.naa.data.Dson;
 import com.naa.data.Utility;
+import com.naa.utils.InternetX;
 import com.naa.utils.Messagebox;
 import com.studioh.cma.AppActivity;
 import com.studioh.cma.R;
@@ -37,28 +50,33 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
 
 import static com.studioh.cma.AppActivity.viewImage;
 
 public class AttendanceActivity extends AppActivity {
+    TextClock tClock;
+    Dson ntracer = Dson.newObject();
+    Chronometer chrono;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_attendance);
         setTitle("Attendance");
 
+        tClock = findViewById(R.id.time);
+        chrono = (Chronometer) findViewById(R.id.worktime);
+
         Date c = Calendar.getInstance().getTime();
         SimpleDateFormat daydate = new SimpleDateFormat("EEE, dd MMMM", new Locale("id","ID","ID"));
         String formattedDate = daydate.format(c);
 
-
         find(R.id.date, TextView.class).setText(formattedDate);
 
-        final TextClock tClock = findViewById(R.id.time);
         tClock.setTimeZone ("Asia/Jakarta");
 
-        final Chronometer chrono = (Chronometer) findViewById(R.id.worktime);
         chrono.setOnChronometerTickListener(new Chronometer.OnChronometerTickListener() {
             @Override
             public void onChronometerTick(Chronometer chronometer) {
@@ -96,11 +114,8 @@ public class AttendanceActivity extends AppActivity {
                 chrono.start();
             } catch (ParseException e) {
                 e.printStackTrace();
-
             }
-
         }
-        final Dson ntracer = Dson.newObject();
 
         find(R.id.btnclockin, Button.class).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -113,35 +128,9 @@ public class AttendanceActivity extends AppActivity {
                         }
                     });
                 }else {
+                    showPopUp();
 
-                    ntracer.set("clockIn", tClock.getText().toString());
-                    ntracer.set("selfie",String.valueOf(find(R.id.imgTake, ImageView.class).getTag()));
 
-                    chrono.setBase(SystemClock.elapsedRealtime());
-                    chrono.start();
-                    find(R.id.clockin, TextView.class).setText(ntracer.get("clockIn").asString());
-                    setSetting("atdPht", String.valueOf(find(R.id.imgTake, ImageView.class).getTag()));
-                    setSetting("timeStart", tClock.getText().toString());
-                    find(R.id.btnclockin, Button.class).setEnabled(false);
-                    find(R.id.btnclockout, Button.class).setEnabled(true);
-                    setResult(RESULT_OK);
-                    //production start
-                    /*simpan(
-                            tClock.getText().toString(),
-                            "Check-in",
-                            String.valueOf(find(R.id.imgTake, ImageView.class).getTag())
-                    );*/
-                    //demo start
-
-                    //demo end
-                    showInfoDialog("Jam Kerja Dimulai ", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            find(R.id.imgTake, ImageView.class).setEnabled(false);
-                            dialog.dismiss();
-                        }
-
-                    });
                 }
             }
         });
@@ -206,8 +195,6 @@ public class AttendanceActivity extends AppActivity {
     ) {
         newProcess(new Messagebox.DoubleRunnable() {
             String result;
-            String sagrno = getSetting("agrno");
-            String splate = getSetting("plate");
 
             public void run() {
                 autoToken();
@@ -223,23 +210,52 @@ public class AttendanceActivity extends AppActivity {
 
             public void runUI() {
                 Dson dson = Dson.readJson(result);
-                if (dson.get("ResponseCode").asString().equalsIgnoreCase("00")) {
+                /*if (dson.get("ResponseCode").asString().equalsIgnoreCase("00")) {
                     showInfoDialog(dson.get("ResponseDescription").asString(), new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
+*/
+                            ntracer.set("clockIn", tClock.getText().toString());
+                            ntracer.set("selfie",String.valueOf(find(R.id.imgTake, ImageView.class).getTag()));
+
+                            chrono.setBase(SystemClock.elapsedRealtime());
+                            chrono.start();
+                            find(R.id.clockin, TextView.class).setText(ntracer.get("clockIn").asString());
+                            setSetting("atdPht", String.valueOf(find(R.id.imgTake, ImageView.class).getTag()));
+                            setSetting("timeStart", tClock.getText().toString());
+                            find(R.id.btnclockin, Button.class).setEnabled(false);
+                            find(R.id.btnclockout, Button.class).setEnabled(true);
+                            setResult(RESULT_OK);
+                            //production start
+                    /*simpan(
+                            tClock.getText().toString(),
+                            "Check-in",
+                            String.valueOf(find(R.id.imgTake, ImageView.class).getTag())
+                    );*/
+                            //demo start
+
+                            //demo end
+                            showInfoDialog("Jam Kerja Dimulai ", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    find(R.id.imgTake, ImageView.class).setEnabled(false);
+                                    dialog.dismiss();
+                                }
+
+                            });
                             //showInfo(getSetting("nnn"));
                             /*Partial.this.finish();
                             dialog.dismiss();*/
                             Intent intent = new Intent(getActivity(), MainActivity.class);
                             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
                             startActivity(intent);
-                        }
+                        /*}
                     });
                 } else if (!dson.containsKey("ResponseDescription")) {
                     showInfo(result);
                 } else {
                     showInfo(dson.get("ResponseDescription").asString());
-                }
+                }*/
             }
         });
     }
@@ -298,6 +314,87 @@ public class AttendanceActivity extends AppActivity {
         //camera
 
     }
+    public void showPopUp() {
+        final View v = Utility.getInflater(getActivity(), R.layout.popup_med_check);
+
+        AlertDialog.Builder dlg = new AlertDialog.Builder(getActivity());
+        dlg.setView(v);
+        dlg.setCancelable(false);
+        final AlertDialog alertDialog = dlg.create();
+        final Dson dMedCheck = Dson.newObject();
+
+        findView(v, R.id.demam, CheckBox.class).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                //String sdemam= String.valueOf(buttonView.getTag());
+                dMedCheck.set("demam", isChecked ? "1" : "");
+            }
+        });
+        findView(v, R.id.tenggorokan, CheckBox.class).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                //String sdemam= String.valueOf(buttonView.getTag());
+                dMedCheck.set("demam", isChecked ? "1" : "");
+            }
+        });
+        findView(v, R.id.batuk, CheckBox.class).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                //String sdemam= String.valueOf(buttonView.getTag());
+                dMedCheck.set("demam", isChecked ? "1" : "");
+            }
+        });
+        findView(v, R.id.pilek, CheckBox.class).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                //String sdemam= String.valueOf(buttonView.getTag());
+                dMedCheck.set("demam", isChecked ? "1" : "");
+            }
+        });
+        findView(v, R.id.diare, CheckBox.class).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                //String sdemam= String.valueOf(buttonView.getTag());
+                dMedCheck.set("demam", isChecked ? "1" : "");
+            }
+        });
+        findView(v, R.id.sesak, CheckBox.class).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                //String sdemam= String.valueOf(buttonView.getTag());
+                dMedCheck.set("demam", isChecked ? "1" : "");
+            }
+        });
+        findView(v, R.id.pusing, CheckBox.class).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                //String sdemam= String.valueOf(buttonView.getTag());
+                dMedCheck.set("demam", isChecked ? "1" : "");
+            }
+        });
+        findView(v, R.id.lesu, CheckBox.class).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                //String sdemam= String.valueOf(buttonView.getTag());
+                dMedCheck.set("demam", isChecked ? "1" : "");
+            }
+        });
+        dMedCheck.set("keluhan",  findView(v, R.id.keluhan, TextView.class).getText().toString() );
+
+        findView(v, R.id.submit, View.class).setOnClickListener(new View.OnClickListener() {
+            public void onClick(final View v) {
+                dMedCheck.toJson();//send med check info
+                simpan(
+                        tClock.getText().toString(),
+                        "Check-in",
+                        String.valueOf(find(R.id.imgTake, ImageView.class).getTag())
+                );
+            }
+        });
+
+        alertDialog.show();
+    }
+    
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults)
     {

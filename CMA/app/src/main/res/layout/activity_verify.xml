@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.VerifyActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp">
+
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_margin="10dp"
+                    app:srcCompat="@drawable/ic_confirm" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="cursive"
+                            android:text="Silahkan memasukan kode verifikasi yang dikirim kenomor HP kamu"
+                            android:textColor="#ffffffff"
+                            android:textSize="30sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:orientation="horizontal">
+
+
+                            <EditText
+                                android:id="@+id/txtOtp1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:imeOptions="actionNext"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:inputType="phone"
+                                android:textSize="30sp"
+                                android:maxLength="1"
+                                android:theme="@android:style/Theme.Holo.InputMethod" />
+
+                            <EditText
+                                android:id="@+id/txtOtp2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:imeOptions="actionNext"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:inputType="phone"
+                                android:textSize="30sp"
+                                android:maxLength="1"
+                                android:theme="@android:style/Theme.Holo.InputMethod" />
+
+                            <EditText
+                                android:id="@+id/txtOtp3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:imeOptions="actionNext"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:inputType="phone"
+                                android:textSize="30sp"
+                                android:maxLength="1"
+                                android:theme="@android:style/Theme.Holo.InputMethod" />
+
+                            <EditText
+                                android:id="@+id/txtOtp4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:imeOptions="actionNext"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:inputType="phone"
+                                android:textSize="30sp"
+                                android:maxLength="1"
+                                android:theme="@android:style/Theme.Holo.InputMethod" />
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <Button
+                                android:id="@+id/tblVerify"
+                                android:layout_width="240dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="20dp"
+                                style="@style/AppTheme.PositiveRoundedCornerMaterialButton"
+                                android:text="Verify"
+                                android:textColor="@android:color/white" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
