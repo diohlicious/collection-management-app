@@ -25,7 +25,8 @@ Go to Doc directory to see app [documentation](Doc/Table-Of-Contents.md)
 
 ## Disclaimer
 Sourcecode are uploaded for presentation and portfolio purpose but can be use under [MIT License](License.md).  
-However some file/s that related to dependency may be missing and limited to cooperational agreement only.
+However some file/s that related to dependency may be missing and limited to cooperational agreement only.  
+Any information that shown in aplication are dummy data and hardcoded in assets/*.json.  
 
 Listed file below are limited to cooperational agreement.
 | File | Desc | Used
