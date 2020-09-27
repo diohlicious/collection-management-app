@@ -27,8 +27,12 @@ Go to Doc directory to see app [documentation](Doc/Table-Of-Contents.md)
 Sourcecode are uploaded for presentation and portfolio purpose but can be use under [MIT License](License.md).  
 However some file/s that related to dependency may be missing and limited to cooperational agreement only.
 
-Listed file below are limited to cooperational agreement. Go to playstore to download demo version.
+Listed file below are limited to cooperational agreement.
 | File | Desc | Used
 |:-----|:-----|:-----
 | dson.java | diohlicious-json serialize and deserialize | most of class
 | AndroidManifest.xml | contain google api key| - |
+ 
+Go to playstore to download demo version.
+User: sunu
+Password: diohlicious
