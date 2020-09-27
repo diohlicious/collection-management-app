@@ -33,6 +33,6 @@ Listed file below are limited to cooperational agreement.
 | dson.java | diohlicious-json serialize and deserialize | most of class
 | AndroidManifest.xml | contain google api key| - |
  
-Go to playstore to download demo version.
-User: sunu
-Password: diohlicious
+Go to playstore to download demo version.  
+User: sunu  
+Password: diohlicious  
