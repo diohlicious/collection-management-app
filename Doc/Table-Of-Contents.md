@@ -3,10 +3,10 @@
 ## [Table Of Contents](Table-Of-Contents.md)
 
 1. login
-    1.1 [Login](Login.md)
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.1 [Verify Email](Ferivy_Email.md)
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.1.1 [Verify Token](Ferivy_Token.md)
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.1.1.1 [Change Password](Change_Password.md)
+    1.1 [Login](Login.md)  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.1 [Verify Email](Ferivy_Email.md)  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.1.1 [Verify Token](Ferivy_Token.md)  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.1.1.1 [Change Password](Change_Password.md)  
 2. Home  
     2.1. [Attendance](Attendance.md)  
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.1.1. [Quick Medical Check-Up](Attendance/Med-Check.md)  
